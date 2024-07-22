@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Rufina:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="//unpkg.com/a11y-slider@latest/dist/a11y-slider.css" /> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fashion website</title>
+  </head>
+  <body>
+   <div class="landing-page">
+     <header class="primary-header">
+        <nav>
+           <div class="logo">
+             <a href="#">
+                <img src="images/logo-Rivo.png" alt="">
+              </a>
+           </div>
+           <ul id="menuList" role="list" class="nav-list ff-body fw-bold">
+             <li><a href="#">HOME</a></li>
+             <li><a href="#">SHOP</a></li>
+             <li><a href="#">FEATURE</a></li>
+             <li><a href="#">CONTACT</a></li>
+           </ul>
+           <img class="shopping-cart" src="images/shopping-cart.png" alt="">
+               <button class="button fs-body-22 ff-body">Login</button>
+           <div class="menu-icon">
+               <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+           </div>
+       </nav>
+     </header>
+
+     <section class="hero">
+      <div class="container">
+        <div class="even-columns">
+          <div class="flow">
+            <h1 class="fs-heading-86 text-primary-dark fw-bold ff-hero-heading">Discover and Find Your Own Fashion!</h1>
+            <p class="fs-body-24 text-light ff-body">Explore our curated collection of stylish clothing and
+              accessories tailored to your unique taste.</p>
+            <button class="button ff-body" data-type="inverted">EXPLORE NOW</button>
+          </div>
+          <div class="hero-image">
+            <img src="images/hero-image.png" alt="">
+          </div>
+        </div>
+      </div>
+       </section>
+   </div>
+
+   <main>
+    <section class="best-selling-section">
+      <div class="container">
+        <div class="center">
+          <h3 class="fs-heading-64 text-primary-dark ff-heading">Best selling</h3>
+          <p class="fs-body-22 text-primary-dark ff-body">Get in on the trend with our curated selection of best-selling styles.</p>
+        </div>
+        <section class="catalogue">
+          <div class="product-detail">
+            <img src="images/Best-selling-one.png" alt="">
+            <div class="pricing-detail">
+              <p class="fs-body-22 text-black-dark ff-body fw-bold">Regular Fit Long Sleeve Top</p>
+              <!-- <p class="fs-body-22 text-black-medium">$38.99  |   5.0 <img src="images/fi-ss-star.png" alt=""> </p> -->
+              <div class="price-rating text-black-medium ff-body fs-body-22">
+                <p class="price ff-body">$38.99</p>
+                <p class="rating">5.0 <img src="images/fi-ss-star.png" alt=""></p>
+              </div>
+            </div>
+          </div>
+          <div class="product-detail">
+            <img src="images/Best-selling-two.png" alt="">
+            <div class="pricing-detail">
+              <p class="fs-body-22 text-primary-dark ff-body fw-bold">Black Crop Tailored Jacket</p>
+              <!-- <p class="fs-body-22 text-black-medium">$62.99  |   4.9 <img src="images/fi-ss-star.png" alt=""> </p> -->
+              <div class="price-rating text-black-medium ff-body fs-body-22">
+                <p class="price ff-body">$62.99</p>
+                <p class="rating">4.9<img src="images/fi-ss-star.png" alt=""></p>
+              </div>
+            </div>
+          </div>
+          <div class="product-detail">
+            <img src="images/Best-selling-three.png" alt="">
+            <div class="pricing-detail">
+              <p class="fs-body-22 text-primary-dark ff-body fw-bold">Textured Sunset Shirt</p>
+              <!-- <p class="fs-body-22 text-black-medium">$49.99 |   5.0 <img src="images/fi-ss-star.png" alt=""> </p> -->
+              <div class="price-rating text-black-medium ff-body fs-body-22">
+                <p class="price ff-body">$49.99</p>
+                <p class="rating">5.0 <img src="images/fi-ss-star.png" alt=""></p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="see-all center fs-body-22 ff-body text-black-dark">
+          <button class="button" data-type="neutral">See all &nbsp;&nbsp; 🡢</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="Our-product-catalogue">
+      <div class="container">
+        <section class="center">
+          <h3 class="text-primary-dark fs-heading-50 ff-heading">Our Products</h3>
+          <div class="nav-bar">
+            <!-- <nav> -->
+              <ul class="fs-body-22 display-flex text-black-medium ff-body" id="nav-bar">
+                <li class="nav-li">SALE</li>
+                <li class="nav-li">HOT</li>
+                <li class="nav-li">NEW ARRIVALS</li>
+                <li class="nav-li">ACCESSORIES</li>
+              </ul>
+            <!-- </nav> -->
+          </div>
+        </section>
+        <section class="catalogue-two">
+          <div class="product-container">
+            <div class="whole-product">
+              <img src="images/product-one.png" alt="">
+              <div class="pricing-detail pricing-detail2">
+                <p class="fs-body-22 text-primary-dark ff-body fw-bold">Black Crop Tailored Jacket</p>
+                <div class="price-rating text-black-medium ff-body fs-body-22">
+                  <p class="price ff-body">$62.99</p>
+                  <p class="rating">4.9<img src="images/fi-ss-star.png" alt=""></p>
+                </div>
+              </div>
+            </div>
+            <div class="whole-product">
+              <img src="images/Product-seven.png" alt="">
+              <div class="pricing-detail">
+                <p class="fs-body-22 text-primary-dark ff-body fw-bold">Black Crop Tailored Jacket</p>
+                <div class="price-rating text-black-medium ff-body fs-body-22">
+                  <p class="price ff-body">$62.99</p>
+                  <p class="rating">4.9<img src="images/fi-ss-star.png" alt=""></p>
+                </div>
+              </div>
+            </div>
+            <div class="whole-product">
+              <img src="images/Product-three.png" alt="">
+              <div class="pricing-detail">
+                <p class="fs-body-22 text-primary-dark ff-body fw-bold">Black Crop Tailored Jacket</p>
+                <div class="price-rating text-black-medium ff-body fs-body-22">
+                  <p class="price ff-body">$62.99</p>
+                  <p class="rating">4.9<img src="images/fi-ss-star.png" alt=""></p>
+                </div>
+              </div>
+            </div>
+            <div class="whole-product">
+              <img src="images/Product-four.png" alt="">
+              <div class="pricing-detail">
+                <p class="fs-body-22 text-primary-dark ff-body fw-bold">Black Crop Tailored Jacket</p>
+                <div class="price-rating text-black-medium ff-body fs-body-22">
+                  <p class="price ff-body">$62.99</p>
+                  <p class="rating">4.9<img src="images/fi-ss-star.png" alt=""></p>
+                </div>
+              </div>
+            </div>
+            <div class="whole-product">
+              <img src="images/Product-five.png" alt="">
+              <div class="pricing-detail">
+                <p class="fs-body-22 text-primary-dark ff-body fw-bold">Black Crop Tailored Jacket</p>
+                <div class="price-rating text-black-medium ff-body fs-body-22">
+                  <p class="price ff-body">$62.99</p>
+                  <p class="rating">4.9<img src="images/fi-ss-star.png" alt=""></p>
+                </div>
+              </div>
+            </div>
+            <div class="whole-product">
+              <img src="images/Product-six.png" alt="">
+              <div class="pricing-detail">
+                <p class="fs-body-22 text-primary-dark ff-body fw-bold">Black Crop Tailored Jacket</p>
+                <div class="price-rating text-black-medium ff-body fs-body-22">
+                  <p class="price ff-body">$62.99</p>
+                  <p class="rating">4.9<img src="images/fi-ss-star.png" alt=""></p>
+                </div>
+              </div>
+            </div>
+            <div class="whole-product">
+              <img src="images/Product-seven.png" alt="">
+              <div class="pricing-detail">
+                <p class="fs-body-22 text-primary-dark ff-body fw-bold">Black Crop Tailored Jacket</p>
+                <div class="price-rating text-black-medium ff-body fs-body-22">
+                  <p class="price ff-body">$62.99</p>
+                  <p class="rating">4.9<img src="images/fi-ss-star.png" alt=""></p>
+                </div>
+              </div>
+            </div>
+            <div class="whole-product">
+              <img src="images/Product-eight.png" alt="">
+              <div class="pricing-detail">
+                <p class="fs-body-22 text-primary-dark ff-body fw-bold">Black Crop Tailored Jacket</p>
+                <div class="price-rating text-black-medium ff-body fs-body-22">
+                  <p class="price ff-body">$62.99</p>
+                  <p class="rating">4.9<img src="images/fi-ss-star.png" alt=""></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <section class="exclusive-offer bg-primary-light">
+      <div class="container">
+        <div class="even-columns">
+          <div class="image-section">
+            <img src="images/offer-photo.png" alt="">
+          </div>
+          <div class="offer-details">
+            <h2 class="text-primary-dark fs-heading-46 ff-heading  fw-bold">Exclusive offer</h2>
+            <p class="text-primary-dark fs-body-22 ff-body fw-bold">Unlock the ultimate style upgrade with our exclusive <br>offer Enjoy 
+              savings of up to 40% off on our latest New <br>Arrivals</p>
+            <div class="timing-boxes">
+              <div class="box bg-primary-neutral ff-body">
+                <h2 class="fs-heading-32 text-primary-dark fw-bold">06</h2>
+                <p class="fs-body-sm-16 text-primary-dark">Days</p>
+              </div>
+              <div class="box bg-primary-neutral">
+                <h2 class="fs-heading-32 text-primary-dark fw-bold">18</h2>
+                <p class="fs-body-sm-16 text-primary-dark">Hours</p>
+              </div>
+              <div class="box bg-primary-neutral">
+                <h2 class="fs-heading-32 text-primary-dark fw-bold">48</h2>
+                <p class="fs-body-sm-16 text-primary-dark">Min</p>
+              </div>
+            </div>
+            <button class="button" data-type="inverted">BUY NOW</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="designer-clothes-section">
+      <div class="container">
+        <div class="center">
+          <h3 class="text-primary-dark fs-heading-50 ff-heading">Designer Clothes For You</h3>
+          <p class="text-primary-dark fs-body-22 ff-body">Immerse yourself in the world of luxury fashion 
+            with our meticulously crafted designer clothes!</p>
+        </div>
+        <section class="item-types">
+          <div class="items">
+            <div class="item-detail">
+              <img src="images/Designer-clothe-for-u1.png" alt="">
+              <h2 class="text-black-dark fs-body-30 fw-bold ff-body">Accessories</h2>
+              <p class="fs-body-22 text-black-dark ff-body">Complete your ensemble with designer accessories such
+                as handbags, scarves, belts, and hats.</p>
+            </div>
+            <div class="item-detail">
+              <img src="images/Designer-clothe-for-u2.png" alt="">
+              <h2 class="text-black-dark fs-body-30 fw-bold ff-body">Dresses</h2>
+              <p class="fs-body-22 text-black-dark ff-body">Explore a stunning range of designer dresses, including
+                evening gowns and chic day dresses.</p>
+            </div>
+            <div class="item-detail">
+              <img src="images/Designer-clothe-for-u3.png" alt="">
+              <h2 class="text-black-dark fs-body-30 fw-bold ff-body">Outerwear</h2>
+              <p class="fs-body-22 text-black-dark ff-body">Browse luxurious designer coats, jackets, and blazers to
+                stay stylishly warm during colder seasons.</p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <section class="feedback-section">
+      <div class="container">
+          <h3 class="fs-heading-50 text-primary-dark ff-heading center">Feedback Corner</h3>
+          <div class="feedbacks-box">
+              <div class="feedback">
+                  <h4 class="fs-heading-64">"</h4>
+                  <h2 class="fs-body-22 text-primary-dark ff-body">Emily Wilson</h2>
+                  <p class="fs-body-sm-16 text-primary-dark ff-body">The customer experience was exceptional from start to finish. The website is user-friendly, the checkout process was smooth, and the clothes I ordered fit perfectly. I'm beyond satisfied!</p>
+              </div>
+              <div class="feedback">
+                  <h4 class="fs-heading-64">"</h4>
+                  <h2 class="fs-body-22 text-primary-dark ff-body">Sarah Thompson</h2>
+                  <p class="fs-body-sm-16 text-primary-dark ff-body">I absolutely love the quality and style of the clothing I purchased from this website. Customer service was outstanding, and I received my order quickly. Highly recommended!</p>
+              </div>
+              <div class="feedback">
+                  <h4 class="fs-heading-64">"</h4>
+                  <h2 class="fs-body-22 text-primary-dark ff-body">Olivia Martinez</h2>
+                  <p class="fs-body-sm-16 text-primary-dark ff-body">I had a great experience shopping on this website. The clothes I bought are fashionable and comfortable. Highly satisfied, loved it!</p>
+              </div>
+          </div>
+      </div>
+  </section>
+ </main>
+
+ <footer class="footer ff-body bg-primary-dark">
+  <div class="footer-content">
+      <div class="footer-section logo-social">
+          <a href="#"><img src="images/logo-Rivo-light.png" alt=""></a>
+          <div class="social-media">
+              <p class="ff-heading fs-body-22">Social Media</p>
+              <div class="social-icons">
+                  <a href="#"><img src="images/Facebook.png" alt="Facebook"></a>
+                  <a href="#"><img src="images/Twitter.png" alt="Twitter"></a>
+                  <a href="#"><img src="images/Instagram.png" alt="Instagram"></a>
+              </div>
+          </div>
+      </div>
+      <div class="shop-company">
+        <div class="footer-section shop">
+            <h4 class="ff-heading fs-body-22">SHOP</h4>
+            <ul class="fs-body-sm-20">
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Overview</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Releases</a></li>
+            </ul>
+        </div>
+        <div class="footer-section company">
+            <h4 class="ff-heading fs-body-22">COMPANY</h4>
+            <ul class="fs-body-sm-20 text-primary-bright">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Support</a></li>
+            </ul>
+        </div>
+      </div>
+      <div class="footer-section stay-up-to-date">
+          <h4 class="ff-heading">STAY UP TO DATE</h4>
+          <form>
+              <input type="email" placeholder="Enter your email">
+              <button type="submit">SUBMIT</button>
+          </form>
+      </div>
+  </div>
+  <div class="footer-bottom fs-body-sm-20 ff-body">
+       <hr>
+      <div class="footer-links">
+          <a href="#">Terms</a>
+          <a href="#">Privacy</a>
+          <a href="#">Cookies</a>
+      </div>
+  </div>
+</footer>  
+
+   <script src="script.js"></script>
+   <script src="https://kit.fontawesome.com/f8e1a90484.js" crossorigin="anonymous"></script>
+</body>
+</html>

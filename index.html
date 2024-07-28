@@ -8,7 +8,13 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Rufina:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="//unpkg.com/a11y-slider@latest/dist/a11y-slider.css" /> 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--=============== REMIXICONS ===============-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" crossorigin="">
+  <!--============== SWIPER CSS ===============-->
+  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+  <!--=============== CSS ===============-->
+  <link rel="stylesheet" href="assets/css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fashion website</title>
   </head>
   <body>
@@ -263,26 +269,51 @@
       </div>
     </section>
 
-    <section class="feedback-section">
-      <div class="container">
+  <section class="feedback-section containers">
+      <div class="card__container swiper">
           <h3 class="fs-heading-50 text-primary-dark ff-heading center">Feedback Corner</h3>
-          <div class="feedbacks-box">
-              <div class="feedback">
+          <div class="card__content">
+            <div class="feedbacks-box swiper-wrapper">
+              <div class="feedback card__article swiper-slide">
                   <h4 class="fs-heading-64">"</h4>
                   <h2 class="fs-body-22 text-primary-dark ff-body">Emily Wilson</h2>
                   <p class="fs-body-sm-16 text-primary-dark ff-body">The customer experience was exceptional from start to finish. The website is user-friendly, the checkout process was smooth, and the clothes I ordered fit perfectly. I'm beyond satisfied!</p>
-              </div>
-              <div class="feedback">
+              </div> 
+              <div class="feedback card__article swiper-slide">
                   <h4 class="fs-heading-64">"</h4>
                   <h2 class="fs-body-22 text-primary-dark ff-body">Sarah Thompson</h2>
                   <p class="fs-body-sm-16 text-primary-dark ff-body">I absolutely love the quality and style of the clothing I purchased from this website. Customer service was outstanding, and I received my order quickly. Highly recommended!</p>
               </div>
-              <div class="feedback">
+              <div class="feedback card__article swiper-slide">
+                <h4 class="fs-heading-64">"</h4>
+                <h2 class="fs-body-22 text-primary-dark ff-body">Sarah Thompson</h2>
+                <p class="fs-body-sm-16 text-primary-dark ff-body">I absolutely love the quality and style of the clothing I purchased from this website. Customer service was outstanding, and I received my order quickly. Highly recommended!</p>
+              </div>
+              <div class="feedback card__article swiper-slide">
                   <h4 class="fs-heading-64">"</h4>
                   <h2 class="fs-body-22 text-primary-dark ff-body">Olivia Martinez</h2>
                   <p class="fs-body-sm-16 text-primary-dark ff-body">I had a great experience shopping on this website. The clothes I bought are fashionable and comfortable. Highly satisfied, loved it!</p>
               </div>
+              <div class="feedback card__article swiper-slide">
+                <h4 class="fs-heading-64">"</h4>
+                <h2 class="fs-body-22 text-primary-dark ff-body">Olivia Martinez</h2>
+                <p class="fs-body-sm-16 text-primary-dark ff-body">I had a great experience shopping on this website. The clothes I bought are fashionable and comfortable. Highly satisfied, loved it!</p>
+              </div>
           </div>
+          </div>
+
+          <!-- Navigation buttons -->
+          <div class="swiper-button-next">
+            <i class="ri-arrow-right-s-line"></i>
+           </div>
+           
+           <div class="swiper-button-prev">
+            <i class="ri-arrow-left-s-line"></i>
+           </div>
+
+           <!-- Pagination -->
+           <div class="swiper-pagination" style="margin-top: 50px;"></div>
+
       </div>
   </section>
  </main>
@@ -337,7 +368,10 @@
       </div>
   </div>
 </footer>  
-
+    <!--=============== SWIPER JS ===============-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
    <script src="script.js"></script>
    <script src="https://kit.fontawesome.com/f8e1a90484.js" crossorigin="anonymous"></script>
 </body>

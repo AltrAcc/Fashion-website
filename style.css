@@ -823,6 +823,11 @@ nav ul li a{
   overflow: hidden;
 }
 
+.card__article.swiper-slide-active {
+  background-color: var(--clr-primary-light) !important;
+  transition: background-color 0.3s ease-in-out;
+}
+
 /* Swiper class */
 
 .swiper-pagination-bullet {
@@ -834,6 +839,9 @@ nav ul li a{
   background-color: var(--clr-primary-dark) !important;
 }
 
+.swiper-pagination {
+  display: none;
+}
 
 /* Tablet styles */
 @media (max-width: 1024px) {
@@ -850,6 +858,9 @@ nav ul li a{
   }
   .feedback-section h3 {
     font-size: var(--fs-30);
+  }
+   .swiper-pagination {
+    display: block;
   }
 }
 

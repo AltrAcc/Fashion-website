@@ -22,4 +22,17 @@ let swiperCards = new Swiper(".card__content", {
       slidesPerView: 3,
     },
   },
+
+  on: {
+    slideChange: function() {
+      // Remove 'active' class from all slides
+      document.querySelectorAll('.swiper-slide').forEach(slide => {
+        slide.classList.remove('swiper-slide-active-custom');
+      });
+      
+      // Add 'active' class to the currently active slide
+      let activeSlide = this.slides[this.activeIndex];
+      activeSlide.classList.add('swiper-slide-active-custom');
+    }
+  }
 });
